@@ -254,8 +254,8 @@ String progMenu="What's next?\n"
 char kpLookup[10] = {KEY_KP_0,KEY_KP_1,KEY_KP_2,KEY_KP_3,KEY_KP_4,KEY_KP_5,KEY_KP_6,KEY_KP_7,KEY_KP_8,KEY_KP_9};
 
 //pins for rows and columns; rearrange as needed to match your wiring
-byte rowPins[ROWS] = {A1, A0, A2}; //connect to the row pinouts of the keypad
-byte colPins[COLS] = {A4, A3}; //connect to the column pinouts of the keypad
+byte rowPins[ROWS] = {2, 1, 0}; //connect to the row pinouts of the keypad  (top, middle, bottom)
+byte colPins[COLS] = {4, 3}; //connect to the column pinouts of the keypad (left, right)
 
 //create keypad object
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
