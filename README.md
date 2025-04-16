@@ -11,3 +11,4 @@ Pressing the middle 2 keys simultaneously will put it into programming mode. You
 
 The code uses an eeprom emulator to store key settings to flash memory (the Trinket doesn't have eeprom on board).
 
+2025-04-16 - Added keypad_interact_rpt.ino (allows key repetition)
